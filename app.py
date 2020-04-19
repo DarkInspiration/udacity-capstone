@@ -290,6 +290,12 @@ def create_app(test_config=None):
             "message": "Server error",
         }), 500
 
+    @app.errorhandler(AuthError)
+    def unauthorized(error):
+        return jsonify(
+            error.error,
+        ), error.status_code
+
     return app
 
 
