@@ -3,11 +3,16 @@ from flask import request, _request_ctx_stack, abort
 from functools import wraps
 from jose import jwt
 from urllib.request import urlopen
+import os
 
 
-AUTH0_DOMAIN = 'darkinspiration.eu.auth0.com'
-ALGORITHMS = ['RS256']
-API_AUDIENCE = 'casting_agency_api'
+import os
+# AUTH0_DOMAIN = 'darkinspiration.eu.auth0.com'
+# ALGORITHMS = ['RS256']
+# API_AUDIENCE = 'casting_agency_api'
+AUTH0_DOMAIN = os.environ['AUTH0_DOMAIN']
+ALGORITHMS = [os.environ['ALGORITHMS']]
+API_AUDIENCE = os.environ['API_AUDIENCE']
 
 # AuthError Exception
 '''
