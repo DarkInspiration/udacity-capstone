@@ -2,6 +2,9 @@
 
 Full-Stack Developer Nanodegree Program capstone project
 
+Heroku link:
+```http://udacity-casting-agency-capston.herokuapp.com/```
+
 ## Getting Started
 
 ### Installing Dependencies
@@ -167,6 +170,12 @@ Sample Response:
 Sample Request:
 ```
 POST http://0.0.0.0:8080/actors
+BODY 
+{
+"name": "Test name",
+"gender": "Test gender",
+"age": 20
+}
 ```
 
 Sample Response:
@@ -189,6 +198,11 @@ Sample Response:
 Sample Request:
 ```
 POST http://0.0.0.0:8080/movies
+self.new_movie = 
+{
+"title": "Test title",
+"release_date": "2020.04.19"
+}
 ```
 
 Sample Response:
