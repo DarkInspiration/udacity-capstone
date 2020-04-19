@@ -2,6 +2,10 @@
 
 Full - Stack Developer Nanodegree Program capstone project
 
+# Motivation
+
+We wanted to create an app where you can get a list of actors and movies, add new, modify or even delete actors and movies - based on your role and permissions in the agency. 
+
 Heroku link:
 ```http: // udacity - casting - agency - capston.herokuapp.com/```
 
