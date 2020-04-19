@@ -43,7 +43,7 @@ def create_app(test_config=None):
             return jsonify({
                 'status': 200,
                 'success': True,
-                'actors': [i.format() for i in query],
+                'actors': [actor.format() for actor in query],
                 'total_actors': len(query)
             })
         except BaseException:
@@ -145,7 +145,7 @@ def create_app(test_config=None):
             return jsonify({
                 'status': 200,
                 'success': True,
-                'movies': [i.format() for i in query],
+                'movies': [movie.format() for movie in query],
                 'total_movies': len(query)
             })
         except BaseException:
